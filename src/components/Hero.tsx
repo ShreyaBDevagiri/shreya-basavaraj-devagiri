@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Download, User } from "lucide-react";
 import { Button } from "./ui/button";
 
 export const Hero = () => {
@@ -15,8 +15,21 @@ export const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Profile Photo */}
+          <div className="mb-8 animate-fade-in">
+            <div className="relative inline-block">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-primary/50 p-1 bg-gradient-to-br from-primary/20 to-accent/20">
+                <div className="w-full h-full rounded-full bg-secondary/80 backdrop-blur-sm flex items-center justify-center overflow-hidden">
+                  {/* Replace with actual photo by updating the src */}
+                  <User className="w-16 h-16 md:w-20 md:h-20 text-muted-foreground" />
+                </div>
+              </div>
+              <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-primary rounded-full border-2 border-background animate-pulse" />
+            </div>
+          </div>
+
           {/* Greeting */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 backdrop-blur-sm mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 backdrop-blur-sm mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             <span className="text-sm font-mono text-muted-foreground">
               Open to opportunities
@@ -24,36 +37,39 @@ export const Hero = () => {
           </div>
 
           {/* Name */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-up" style={{ animationDelay: "0.2s" }}>
             Hi, I'm{" "}
             <span className="text-gradient">Shreya Devagiri</span>
           </h1>
 
           {/* Title */}
-          <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-4 animate-slide-up" style={{ animationDelay: "0.3s" }}>
             <span className="font-mono text-primary">DevOps Engineer</span> & 
             <span className="font-mono text-accent"> ML Enthusiast</span>
           </p>
 
           {/* Description */}
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: "0.3s" }}>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: "0.4s" }}>
             Building robust CI/CD pipelines, automating workflows, and exploring 
             the intersection of DevOps and Machine Learning. Currently pursuing 
             MS in Computer Science at UT Dallas.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-slide-up" style={{ animationDelay: "0.4s" }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-slide-up" style={{ animationDelay: "0.5s" }}>
             <Button variant="hero" size="xl" asChild>
               <a href="#projects">View My Work</a>
             </Button>
             <Button variant="outline" size="xl" asChild>
-              <a href="#contact">Get in Touch</a>
+              <a href="/Shreya_Devagiri_Resume.pdf" download="Shreya_Devagiri_Resume.pdf">
+                <Download className="w-4 h-4 mr-2" />
+                Download Resume
+              </a>
             </Button>
           </div>
 
           {/* Social Links */}
-          <div className="flex items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: "0.5s" }}>
+          <div className="flex items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: "0.6s" }}>
             <a
               href="https://github.com/Shreya Devagiri"
               target="_blank"
