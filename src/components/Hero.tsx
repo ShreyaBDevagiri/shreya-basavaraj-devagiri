@@ -21,7 +21,7 @@ export const Hero = () => {
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-primary/50 p-1 bg-gradient-to-br from-primary/20 to-accent/20">
                 <div className="w-full h-full rounded-full bg-secondary/80 backdrop-blur-sm flex items-center justify-center overflow-hidden">
                   <img 
-                    src="/ProfilePic.png" 
+                    src={`${import.meta.env.BASE_URL}ProfilePic.png`}
                     alt="Shreya Devagiri" 
                     className="w-full h-full object-cover"
                   />
