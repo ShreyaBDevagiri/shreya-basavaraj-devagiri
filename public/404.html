@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shreya Devagiri | DevOps Engineer & ML Enthusiast</title>
     <script>
-      // Redirect to index.html with the original path preserved as hash
-      const path = window.location.pathname.replace('/shreya-basavaraj-devagiri/', '');
-      if (path && path !== '/') {
-        window.location.href = '/shreya-basavaraj-devagiri/#' + path;
+      // Get the current pathname and convert it to a hash route
+      const pathname = window.location.pathname;
+      const basePath = '/shreya-basavaraj-devagiri';
+      
+      // Remove the base path and convert to hash
+      let path = pathname.replace(basePath, '').replace(/\/$/, '');
+      
+      if (path && path !== '') {
+        // Redirect to the index page with the path as a hash
+        window.location.replace(basePath + '/#' + path);
       } else {
-        window.location.href = '/shreya-basavaraj-devagiri/';
+        // Redirect to the main page
+        window.location.replace(basePath + '/');
       }
     </script>
   </head>
