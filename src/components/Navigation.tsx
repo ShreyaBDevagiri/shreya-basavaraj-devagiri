@@ -36,7 +36,7 @@ export const Navigation = () => {
             href="#"
             className="font-mono text-lg font-bold text-primary hover:text-primary/80 transition-colors"
           >
-            {"<SD />"}
+            Shreya Basavaraj Devagiri
           </a>
 
           {/* Desktop Navigation */}

@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Github, Linkedin, ArrowUpRight } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin, ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
 
 export const Contact = () => {
@@ -22,7 +22,7 @@ export const Contact = () => {
           </p>
 
           {/* Contact Info Cards */}
-          <div className="grid sm:grid-cols-3 gap-6 mb-12">
+          <div className="grid sm:grid-cols-2 gap-6 mb-12">
             <a
               href="mailto:shreyabdevagiri@gmail.com"
               className="group p-6 rounded-2xl bg-gradient-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow"
@@ -32,17 +32,6 @@ export const Contact = () => {
               </div>
               <p className="text-sm text-muted-foreground mb-1">Email</p>
               <p className="text-foreground font-medium text-sm">shreyabdevagiri@gmail.com</p>
-            </a>
-
-            <a
-              href="tel:+12144754773"
-              className="group p-6 rounded-2xl bg-gradient-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow"
-            >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                <Phone className="w-6 h-6 text-primary" />
-              </div>
-              <p className="text-sm text-muted-foreground mb-1">Phone</p>
-              <p className="text-foreground font-medium">+1 (214) 475-4773</p>
             </a>
 
             <div className="group p-6 rounded-2xl bg-gradient-card border border-border hover:border-primary/50 transition-all duration-300">

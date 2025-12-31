@@ -31,13 +31,13 @@ const education = [
     degree: "Master of Science, Computer Science",
     school: "The University of Texas at Dallas",
     period: "Aug 2025 - May 2027",
-    details: "Machine Learning, Computer Vision, Database Systems, Network Security",
+    details: "Machine Learning, Computer Vision, Database Systems, Network Security, Big Data Management and Analytics",
   },
   {
     degree: "Bachelor of Engineering, Computer Science",
     school: "KLE Technological University, Hubli, India",
     period: "Dec 2020 - May 2024",
-    details: "CGPA: 9.46/10 • Third Rank in Class",
+    details: "CGPA: 9.46/10\nThird Rank in Department\nRelevant Coursework: Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks, Machine Learning, Artificial Intelligence",
   },
 ];
 
@@ -121,7 +121,7 @@ export const Experience = () => {
                     {edu.degree}
                   </h4>
                   <p className="text-primary font-medium mb-3">{edu.school}</p>
-                  <p className="text-sm text-muted-foreground">{edu.details}</p>
+                  <p className="text-sm text-muted-foreground whitespace-pre-wrap">{edu.details}</p>
                 </div>
               ))}
             </div>

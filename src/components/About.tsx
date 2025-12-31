@@ -9,7 +9,7 @@ const highlights = [
   {
     icon: GraduationCap,
     label: "Education",
-    value: "MS @ UT Dallas",
+    value: "MS @ University of Texas at Dallas",
   },
   {
     icon: Award,
@@ -45,22 +45,28 @@ export const About = () => {
             {/* Content */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a DevOps Engineer with a passion for automation, cloud technologies, 
-                and machine learning. My journey began at{" "}
-                <span className="text-foreground font-medium">KLE Technological University</span>, 
-                where I graduated with a CGPA of 9.46/10 and ranked third in my class.
+                I'm currently pursuing my <span className="text-foreground font-medium">Master's in Computer Science at University of Texas at Dallas</span>, 
+                specializing in <span className="text-foreground font-medium">Data ScienceIntelligent Systems, and Software Engineering</span>. 
+                I am passionate about combining DevOps practices with AI to build intelligent, self-healing systems that enhance reliability, 
+                efficiency, and scalability in modern software environments.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 At <span className="text-foreground font-medium">Mercedes-Benz R&D India</span>, 
-                I've had the privilege of working on cutting-edge automotive software, 
-                automating ECU testing, and designing CI/CD pipelines that significantly 
-                improved build reliability and deployment efficiency.
+                I've had the privilege of working on cutting-edge automotive software, automating ECU testing, 
+                and designing CI/CD pipelines that significantly improved build reliability and deployment efficiency. 
+                This experience allowed me to apply DevOps principles at scale, integrate automation into complex systems, 
+                and contribute to innovative software solutions.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm currently pursuing my <span className="text-foreground font-medium">Master's in 
-                Computer Science at UT Dallas</span>, focusing on Machine Learning, Computer Vision, 
-                and Network Security. I believe in the power of combining DevOps practices with 
-                AI to create intelligent, self-healing systems.
+              I also developed an in-house <span className="text-foreground font-medium">patented AI tool, AI Bug Buster</span>, 
+              for Mercedes-Benz R&D India. The tool performs intelligent root cause analysis of CI/CD pipeline failures, 
+              identifies error patterns, and suggests actionable solutions. Developers can either use the recommendations 
+              to manually resolve issues or enable automated fixes directly, significantly reducing downtime and 
+              improving development efficiency.
+            </p>
+             <p className="text-lg text-muted-foreground leading-relaxed">
+                My core interests lie at the intersection of <span className="text-foreground font-medium">automation, cloud technologies, software engineering, and machine learning</span>, 
+                 and I am eager to leverage these skills to deliver impactful, intelligent solutions in real-world applications.
               </p>
             </div>
 

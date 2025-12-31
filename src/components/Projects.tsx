@@ -3,6 +3,19 @@ import { Button } from "./ui/button";
 
 const projects = [
   {
+    title: "Automated CI/CD Pipeline Recovery & Self-Healing Tool",
+    description:
+      "Patent-filed automated recovery system for CI/CD pipelines, enabling rapid root cause analysis and self-healing capabilities.",
+    icon: Cpu,
+    tags: ["Python", "Jenkins", "Bazel", "GitLab CI", "Machine Learning", "RAG", "DevOps"],
+    highlights: [
+      "Filed patent at Mercedes-Benz R&D",
+      "Reduced MTTR by 65%",
+      "Automated root cause analysis",
+    ],
+    period: "2024 - 2025",
+  },
+  {
     title: "Plant Leaf Disease Detection using XAI",
     description:
       "An Explainable AI model achieving 92% classification accuracy for plant disease diagnosis, with visual heatmaps and feature-level explanations.",
@@ -27,20 +40,7 @@ const projects = [
       "Reduced manual quality-check time by 60%",
     ],
     period: "Sep 2022 – Jan 2023",
-  },
-  {
-    title: "CI/CD Pipeline Self-Healing Tool",
-    description:
-      "Patent-pending automated recovery system for CI/CD pipelines, enabling rapid root cause analysis and self-healing capabilities.",
-    icon: Cpu,
-    tags: ["Python", "Jenkins", "Bazel", "GitLab CI"],
-    highlights: [
-      "Filed patent at Mercedes-Benz R&D",
-      "Reduced MTTR by 65%",
-      "Automated root cause analysis",
-    ],
-    period: "2024 - 2025",
-  },
+  }
 ];
 
 export const Projects = () => {

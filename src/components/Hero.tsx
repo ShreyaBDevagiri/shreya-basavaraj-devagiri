@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail, Download, User } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "./ui/button";
 
 export const Hero = () => {
@@ -20,8 +20,11 @@ export const Hero = () => {
             <div className="relative inline-block">
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-primary/50 p-1 bg-gradient-to-br from-primary/20 to-accent/20">
                 <div className="w-full h-full rounded-full bg-secondary/80 backdrop-blur-sm flex items-center justify-center overflow-hidden">
-                  {/* Replace with actual photo by updating the src */}
-                  <User className="w-16 h-16 md:w-20 md:h-20 text-muted-foreground" />
+                  <img 
+                    src="/ProfilePic.png" 
+                    alt="Shreya Devagiri" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-primary rounded-full border-2 border-background animate-pulse" />
@@ -39,7 +42,7 @@ export const Hero = () => {
           {/* Name */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-up" style={{ animationDelay: "0.2s" }}>
             Hi, I'm{" "}
-            <span className="text-gradient">Shreya Devagiri</span>
+            <span className="text-gradient">Shreya Basavaraj Devagiri</span>
           </h1>
 
           {/* Title */}
@@ -52,7 +55,7 @@ export const Hero = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: "0.4s" }}>
             Building robust CI/CD pipelines, automating workflows, and exploring 
             the intersection of DevOps and Machine Learning. Currently pursuing 
-            MS in Computer Science at UT Dallas.
+            MS in Computer Science at University of Texas at Dallas.
           </p>
 
           {/* CTA Buttons */}
