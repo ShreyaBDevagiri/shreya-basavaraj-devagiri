@@ -45,6 +45,12 @@ export const Navigation = () => {
               <a
                 key={link.href}
                 href={link.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const id = link.href.replace('#', '');
+                  const element = document.getElementById(id);
+                  element?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
               >
                 {link.label}
@@ -76,7 +82,13 @@ export const Navigation = () => {
                   key={link.href}
                   href={link.href}
                   className="text-muted-foreground hover:text-foreground transition-colors py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsMobileMenuOpen(false);
+                    const id = link.href.replace('#', '');
+                    const element = document.getElementById(id);
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                 >
                   {link.label}
                 </a>
