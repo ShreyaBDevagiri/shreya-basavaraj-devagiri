@@ -58,8 +58,17 @@ export const Navigation = () => {
               </a>
             ))}
             <Button variant="hero" size="sm" asChild>
-              <a href="#contact">Let's Talk</a>
-            </Button>
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.getElementById("contact");
+                  element?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Let's Talk
+              </a>
+          </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -94,10 +103,19 @@ export const Navigation = () => {
                 </a>
               ))}
               <Button variant="hero" size="sm" asChild>
-                <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <a
+                  href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsMobileMenuOpen(false);
+                    const element = document.getElementById("contact");
+                    element?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
                   Let's Talk
                 </a>
-              </Button>
+            </Button>
+
             </div>
           </div>
         )}
