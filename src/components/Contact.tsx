@@ -54,7 +54,7 @@ export const Contact = () => {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6">
             <a
-              href="https://github.com/Shreya Devagiri"
+              href="https://github.com/ShreyaBDevagiri"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
@@ -63,7 +63,7 @@ export const Contact = () => {
               <span className="font-mono text-sm">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com/in/ShreyaDevagiri"
+              href="https://www.linkedin.com/in/shreya-devagiri-4b9a12216/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
