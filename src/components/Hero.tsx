@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-hero" />
       <div className="absolute inset-0 grid-pattern opacity-50" />
       <div className="absolute inset-0 noise-overlay" />
-      
+
       {/* Floating orbs */}
       <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/20 rounded-full blur-[100px] animate-float" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-[120px] animate-float" style={{ animationDelay: "-3s" }} />
@@ -20,9 +20,9 @@ export const Hero = () => {
             <div className="relative inline-block">
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-primary/50 p-1 bg-gradient-to-br from-primary/20 to-accent/20">
                 <div className="w-full h-full rounded-full bg-secondary/80 backdrop-blur-sm flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="/shreya-basavaraj-devagiri/ProfilePic.png" 
-                    alt="Shreya Devagiri" 
+                  <img
+                    src="/shreya-basavaraj-devagiri/ProfilePic.png"
+                    alt="Shreya Devagiri"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -47,21 +47,30 @@ export const Hero = () => {
 
           {/* Title */}
           <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-4 animate-slide-up" style={{ animationDelay: "0.3s" }}>
-            <span className="font-mono text-primary">DevOps Engineer</span> & 
+            <span className="font-mono text-primary">DevOps Engineer</span> &
             <span className="font-mono text-accent"> ML Enthusiast</span>
           </p>
 
           {/* Description */}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: "0.4s" }}>
-            Building robust CI/CD pipelines, automating workflows, and exploring 
-            the intersection of DevOps and Machine Learning. Currently pursuing 
+            Building robust CI/CD pipelines, automating workflows, and exploring
+            the intersection of DevOps and Machine Learning. Currently pursuing
             MS in Computer Science at University of Texas at Dallas.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-slide-up" style={{ animationDelay: "0.5s" }}>
-            <Button variant="hero" size="xl" asChild>
-              <a href="#projects">View My Work</a>
+            <Button
+              variant="hero"
+              size="xl"
+              onClick={() =>
+                document.getElementById("projects")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }
+              >
+              View My Work
             </Button>
             <Button variant="outline" size="xl" asChild>
               <a href="/Shreya_Devagiri_Resume.pdf" download="Shreya_Devagiri_Resume.pdf">
